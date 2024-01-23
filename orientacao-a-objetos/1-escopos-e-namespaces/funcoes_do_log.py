@@ -1,13 +1,13 @@
 # Este arquivo consiste no módulo "funcoes_do_log"
 
-nome_de_usuario = 'Dori'
+nome_de_usuario = 'Dani'
 
 def imprimir_no_log(texto, nivel='info'):
-    if nivel.lower() == 'info':
-        print(f'Info: {texto}')
-    elif nivel.lower() == 'aviso':
-        print(f'Aviso: {texto}')
-    elif nivel.lower() == 'erro':
-        print(f'Erro: {texto}')
+    if nivel == 'info':
+        print(f'[INFO] {texto}')
+    elif nivel == 'alerta':
+        print(f'[ALERTA] {texto}')
+    elif nivel == 'erro':
+        print(f'[Erro] {texto}')
     else:
-        print('Erro interno - nível desconhecido de mensagem')
+        print(f'[ERRO] nível "{nível}" não é válido!')

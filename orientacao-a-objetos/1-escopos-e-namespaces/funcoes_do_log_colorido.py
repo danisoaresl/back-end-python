@@ -4,7 +4,7 @@ import colorama
 # Necessário para fazer o colorama iniciar
 colorama.init()
 
-nome_de_usuario = 'Dori'
+nome_de_usuario = 'Dani'
 
 def imprimir_no_log(texto, nivel='info'):
     if nivel.lower() == 'info':
